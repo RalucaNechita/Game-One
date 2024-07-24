@@ -42,3 +42,28 @@ h1 {
     flex: 1 1 30%;
     max-width: 120px;
 }
+
+.results {
+    margin-top: 20px;
+}
+
+.results p {
+    margin-top: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .choices button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .choices button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+
