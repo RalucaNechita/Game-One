@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.choices button').forEach(button => {
                 button.disabled = true;
             });
-            let gameOverMessage = score > 1 ? "Congratulations! You won!" : "Sorry, you lost the game.:("
-            document.getElementById('game-over').textContent = gameOverMessage + "Refresh the page to play again"
+            let gameOverMessage = score >= 2 ? "Congratulations! You won the game!" : "Sorry, you lost the game.";
+            document.getElementById('game-over').textContent = gameOverMessage + " Refresh the page to play again.";
             document.getElementById('game-over').style.display = 'block';
         }
     }
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const result = results[userChoice][computerChoice];
                 document.getElementById('result').textContent = `Result: ${result}`;
 
-                if (result === 'You win') {
+                if (result === 'You Win') {
                     score++;
                 }
 
